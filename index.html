@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <script src="scripts.js"></script>
+    <title>Test</title>
+    <link rel="shortcut icon"  type="image/x-icon" href="imagenes/user1.jpg">
+</head>
+<body onload="ocultarAlEntrar();">
+    <nav id="menu">
+    
+        <ul>
+           
+            <h1 id="login-user">nombre</h1>
+    
+        </ul>
+    
+    </nav>
+        <div class="contenedor">
+         
+            <div class="cart">
+               
+                <div class="seccion" id="seccion-login">
+                    <img src=" imagenes/user1.jpg" class="img-circulo" />
+                    
+                    <form action="" class="iniciar">
+                        <label for="">Nombre : </label>
+                        <input type="text" name="nombre" id="nombre" class="entradas">
+                    
+                    
+                        <label for="">Apellidos : </label>
+                        <input type="text" name="apellidos" id="apellidos" class="entradas">
+                        <div>
+                            <a type="button" class="button" href="#pregunta1" onclick="capturarUsuario();">Iniciar Sesion</a>
+                        </div>
+                    
+                    </form>
+                </div>
+                
+                <div class="seccionPreguntas" id="seccionPreguntas">
+                    <div class="fila">
+                        <div class="seccionPreguntas-items">
+                            <a href="#pregunta-1" type="button" class="items-circulos">1</a>
+                            <p>Pregunta 1</p>
+                        </div>
+                        <div class="seccionPreguntas-items">
+                            <a href="#pregunta-2" type="button" class="items-circulos">2</a>
+                            <p>Pregunta 2</p>
+                        </div>
+                        <div class="seccionPreguntas-items">
+                            <a href="#pregunta-3" type="button" class="items-circulos">3</a>
+                            <p>Pregunta 3</p>
+                        </div>
+                        <div class="seccionPreguntas-items">
+                            <a href="#pregunta-4" type="button" class="items-circulos">4</a>
+                            <p>Pregunta 4</p>
+                        </div>
+                        <div class="seccionPreguntas-items">
+                            <a href="#pregunta-5" type="button" class="items-circulos">5</a>
+                            <p>Pregunta 5</p>
+                        </div>
+                        <div class="seccionPreguntas-items">
+                            <a href="#pregunta-6" type="button" class="items-circulos">6</a>
+                            <p>Pregunta 6</p>
+                        </div>
+                        <div class="seccionPreguntas-items">
+                            <a href="#pregunta-7" type="button" class="items-circulos">7</a>
+                            <p>Pregunta 7</p>
+                        </div>
+                        <div class="seccionPreguntas-items">
+                            <a href="#pregunta-8" type="button" class="items-circulos">8</a>
+                            <p>Pregunta 8</p>
+                        </div>
+                        <div class="seccionPreguntas-items">
+                            <a href="#pregunta-9" type="button" class="items-circulos">9</a>
+                            <p>Pregunta 9</p>
+                        </div>
+                    </div>
+
+                    <div class="preguntas" id="preguntas">
+                        
+                        <div class="info">
+                            <p> <strong id="pregunta-actual"> </strong></p>
+                            <p> <strong id="resultado-test"> </strong></p>
+                            <p> <strong id="puntuacion"></strong></p>
+                        </div>
+                        
+                        <div class="preguntas-item" id="pregunta-1">
+                            <p>
+                                En JavaScript, ¿cómo se llama el método que comprueba una expresión regular y devuelve true si se cumple?
+                            </p>
+                            <label class="container">a) check()
+                                <input type="radio" value="a" name="pregunta1">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">b) exec()
+                                <input type="radio" value="b"name="pregunta1">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">c) run()
+                                <input type="radio" value="c"name="pregunta1">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">d) test()
+                                <input type="radio" value="d"name="pregunta1">
+                                <span class="checkmark"></span>
+                            </label>
+                           
+                        </div>
+                        <div class="preguntas-item" id="pregunta-2">
+                            <p>En JavaScript, ¿qué función se emplea para convertir una cadena a minúsculas?</p>
+                            <label class="container">a) lower()
+                                <input type="radio" value="a" name="pregunta2"> 
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">b) lowerCase()
+                                <input type="radio" value="b" name="pregunta2">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">c) toLower()
+                                <input type="radio" value="c" name="pregunta2">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">d) toLowerCase()
+                                <input type="radio" value="d" name="pregunta2">
+                                <span class="checkmark"></span>
+                            </label>
+                            
+                        </div>
+                        <div class="preguntas-item" id="pregunta-3">
+                            <p>En JavaScript, ¿cuál es la forma correcta de crear un array?</p>
+                            <label class="container">a) var txt = new Array:1=("tim"),2=("kim"),3=("jim")
+                                <input type="radio" value="a" name="pregunta3">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">b) var txt = new Array(1="tim",2="kim",3="jim")
+                                <input type="radio" value="b" name="pregunta3">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">c) var txt = new Array("tim","kim","jim")
+                                <input type="radio" value="c" name="pregunta3">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">d) var txt = new Array(1:"tim",2:"kim",3:"jim")
+                                <input type="radio" value="d" name="pregunta3">
+                                <span class="checkmark"></span>
+                            </label>
+                            
+                        </div>
+                        <div class="preguntas-item"id="pregunta-4">
+                            <p>En el DOM, para obtener el contenido textual de una parte de la página se emplea la propiedad</p>
+                            <label class="container">a) context
+                                <input type="radio" value="a"name="pregunta4">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">b) text
+                                <input type="radio" value="b"name="pregunta4">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">c) textContext
+                                <input type="radio" value="c"name="pregunta4">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">d) value
+                                <input type="radio" value="d"name="pregunta4">
+                                <span class="checkmark"></span>
+                            </label>
+                            
+                        </div>
+                        <div class="preguntas-item" id="pregunta-5">
+                            <p>¿Qué etiqueta de HTML se emplea para escribir código JavaScript?</p>
+                                <label class="container">a) script
+                                    <input type="radio" value="a" name="pregunta5">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">b) javascript
+                                    <input type="radio" value="b" name="pregunta5" >
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">c) scripting
+                                    <input type="radio" value="c" name="pregunta5">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">d) js
+                                    <input type="radio" value="d" name="pregunta5">
+                                    <span class="checkmark"></span>
+                                </label>
+                            
+                        </div>
+                        <div class="preguntas-item" id="pregunta-6">
+                            <p>En JavaScript, las posiciones de los caracteres de una cadena empiezan en</p>
+                                <label class="container">a) -1
+                                    <input type="radio" value="a" name="pregunta6">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">b) 0
+                                    <input type="radio" value="b" name="pregunta6">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">c) 1
+                                    <input type="radio" value="c" name="pregunta6">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">d) Las anteriores son correctas
+                                    <input type="radio" value="d" name="pregunta6">
+                                    <span class="checkmark"></span>
+                                </label>
+                        </div>
+                        <div class="preguntas-item" id="pregunta-7">
+                            <p>En JavaScript, ¿cómo se redondea el número 7.25 al entero más cercano?</p>
+                                    <label class="container">a) round(7.25)
+                                        <input type="radio" value="a" name="pregunta7">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">b) Math.round(7.25)
+                                        <input type="radio" value="b" name="pregunta7">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">c) Math.rnd(7.25)
+                                        <input type="radio" value="c" name="pregunta7">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">d) rnd(7.25)
+                                        <input type="radio" value="d" name="pregunta7">
+                                        <span class="checkmark"></span>
+                                    </label>
+                        </div>
+                        <div class="preguntas-item"id="pregunta-8">
+                            <p>En JavaScript, ¿cómo se genera un número aleatorio?</p>
+                                <label class="container">a) Math.rnd()
+                                    <input type="radio" value="a" name="pregunta8">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">b) Math.round()
+                                    <input type="radio" value="b" name="pregunta8">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">c) Math.random()
+                                    <input type="radio" value="c" name="pregunta8">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">d) Las anteriores no son correctas
+                                    <input type="radio" value="d" name="pregunta8">
+                                    <span class="checkmark"></span>
+                                </label>
+                            
+                        </div>
+                        <div class="preguntas-item" id="pregunta-9">
+                            <p>La compañía que inventó el lenguaje JavaScript fue</p>
+                                <label class="container">a) Mozilla
+                                    <input type="radio" value="a" name="pregunta9">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">b) Netscape
+                                    <input type="radio" value="b" name="pregunta9">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">c) Sun
+                                    <input type="radio" value="c" name="pregunta9">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="container">d) Las anteriores no son correctas
+                                    <input type="radio" value="d" name="pregunta9">
+                                    <span class="checkmark"></span>
+                                </label>
+                               
+
+                             
+                            
+                        </div>
+                        <div id="resultados">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <td>Numero pregunta</td>
+                                        <td>Pregunta</td>
+                                        <td>Respuesta Correcta </td>
+                                        <td>Respuesta Ingresada</td>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="filas">
+                                    
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="anterior">
+                            <button  class="style-button" id="anterior" onclick="movermeEntrePreguntas(-1)" >Anterior</button>
+                        </div>
+                        <div class="siguiente">
+                            <button  class="style-button" id="siguiente" onclick="movermeEntrePreguntas(1)">Siguiente</button>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+        </div>
+</body>
+</html>

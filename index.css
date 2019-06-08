@@ -1,0 +1,351 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+nav{
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    
+}
+
+nav h1{
+	
+	color: #fff;
+	line-height: 40px;
+	padding: 0px 10px;
+    display: block;
+    text-align: center;
+
+}
+nav ul li a:hover{
+	background-color: rgb(137, 214, 245);
+}
+
+.contenedor{
+
+    height: auto;
+    width: auto;
+    
+    background-color: rgba(0,0,0,10);
+    background-image:  linear-gradient(-30deg,
+        rgba(231, 66, 143, 0.61),
+        rgb(98, 74, 155)
+        
+      );
+    background-size: cover, contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: 103%;
+    animation: movimiento 15s infinite linear alternate;
+
+    
+
+}
+
+.cart {
+
+    width: 75%;
+    height: auto;
+    background: linear-gradient(-60deg, rgb(69, 24, 173), rgb(13, 11, 27));
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid 1px rgba(255,255,255,.5);
+    border-radius: 10px;
+    margin-bottom: 90px;
+    box-shadow: 10px;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.iniciar label {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  color: rgba(255,255,255,.7);
+  display: block;
+  text-align: left;
+  margin-left: 25px;
+}
+.cart .iniciar {
+  width: 430px;
+  height: 375px;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-top: 50px;
+  transition: opacity .5s ease, transform .5s ease;
+  margin: auto;
+  position: relative;
+  
+}
+.entradas {
+    width: 80%;
+    height: 35px;
+	padding-left: 15px;
+	border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background: rgba(255,255,255,.2);
+    outline:0px;
+    color: white;
+    
+}
+
+.button{
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: rgba(211, 171, 243, 0.589);;
+    outline: 0px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+.seccion{
+    width: 430px;
+    height: auto;
+    
+    margin: auto;
+}
+.contenedor .cart .img-circulo{
+    margin-top: 70px;
+    background: blue;
+    width: 150px;
+    height: auto;
+    border-radius: 75px;
+    margin-left: 30px;
+    border: 2px solid blue;
+}
+.cart .seccionPreguntas{
+    
+    width: 700px;
+    height: auto;
+    border: 2px solid white;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    position: relative;
+    background: #f8f8f8;
+
+    
+}
+.fila{
+    display: flex ;
+    margin-top: 10px;
+    
+
+}
+
+.seccionPreguntas .fila .seccionPreguntas-items{
+    
+    display: table-cell;
+    text-align: center;
+    position: relative;
+    margin-left: 30px;
+}
+
+.seccionPreguntas .seccionPreguntas-items .items-circulos{
+
+  
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 50px;
+  color: #f8f8f8;
+  text-decoration: none;
+  background: #bbbbbb;
+
+}
+.seccionPreguntas-items p{
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.seccionPreguntas .preguntas{
+    width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.seccionPreguntas .preguntas .info {
+    height: 60px;
+    display: flex;
+    
+    
+}
+.info p #pregunta-actual{
+   
+    height: 40px;
+    float: left;
+    margin-right: 100px;
+   
+}
+.info p #resultado-test{
+   margin-left: 5px;
+   text-align: center;
+}
+.info p #puntuacion{
+    margin-left: 150px;
+    float: right;
+}
+  
+.seccionPreguntas .preguntas .preguntas-item{
+    margin-top: 30px;
+     display: flex;
+    justify-content: space-between;
+    text-align: left;
+    
+
+}
+
+.preguntas-item p{
+    font-size: 20px;
+    color: blue;
+    font-weight: 400;
+    margin-bottom: 30px;;
+
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 400px;
+  margin-left: 50px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.cart .seccionPreguntas .anterior{
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.cart .seccionPreguntas .siguiente{
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ .seccionPreguntas .style-button{
+
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background: linear-gradient(-60deg, rgb(69, 24, 173), rgb(13, 11, 27));
+    outline: 0px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.respuestaExitosa{
+    background: #4CAF50;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 50px;
+    color: #f8f8f8;
+    text-decoration: none;
+  
+}
+#resultados{
+    
+    
+    margin-top: 20px;
+
+}
+
+#resultados .table{
+    width: 500px;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+#resultados .table tr{
+    margin-top: 50px;
+    
+}
+
+
+#resultados .table tr td {
+    margin-top: 25px;
+    margin-left: 20px;
+    width: auto;
+    
+
+}
